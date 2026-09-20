@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 StudyMate AI</h1>
+
+        <p class="subtitle">
+            Your simple AI study assistant
+        </p>
+
+        <div class="card">
+
+            <label for="subject">Enter your subject</label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Example: Mathematics,History,Java,DBMS,Physics,Accounts,Physiology,Science..."
+            >
+
+            <label for="question">Enter a topic or question</label>
+
+            <textarea
+                id="question"
+               placeholder="Example: Explain a concept, solve a problem, or ask a question..."
+            ></textarea>
+
+            <button id="explainBtn">
+                ✨ Explain
+            </button>
+
+            <div id="loading" class="hidden">
+                Generating explanation...
+            </div>
+
+            <div id="error" class="error hidden"></div>
+
+            <div id="result" class="result hidden">
+
+                <h2>AI Explanation</h2>
+
+                <div id="answer"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
